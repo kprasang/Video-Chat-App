@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#video-grid{
+    display: flex;
+    justify-content: center;
+}
+
+video{
+    height: 250px;
+    width: 350px;
+    object-fit: cover;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    border: 3px solid black;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+}
+
+.main__left{
+    flex: 0.8;
+}
+
+.main__right{
+    flex: 0.2;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #3D3D42;
+    color: black;
+}
+
+.main__videos{
+    flex-grow: 1;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.main__controls{
+    display: flex;
+    background-color: #1c1e20;
+    height: 10vh;
+    color: #ffffff;
+    padding: 6px;
+    align-items: center;
+    border-top: 1px solid #3D3D42;
+}
+.main__controls__block{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+.main__controls__button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px;
+    height: 100%;
+    padding-right: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 92px;
+}
+.main__controls__button:hover{
+    background-color: #343434;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.main__right__chat{
+    display: flex;
+    font-size: 20px;   
+    color: #7B7B7B;
+    padding: 5px;
+    word-wrap: break-word;
+}
+
+.main__header {
+    padding-top: 5px;
+    color: #F5F5F5;
+    text-align: center;
+}
+
+.main__chat_window {
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: auto;
+    padding: 12px;
+    word-wrap: break-word;
+}
+
+.messages{
+    color: black;
+    list-style: none;
+}
+
+.main__message_container {
+    padding: 22px 12px;
+    display: flex;
+    word-wrap: break-word;
+}
+
+.main__message_container input {
+    flex-grow: 1;
+    background-color: transparent;
+    border-radius: 20px;
+    border: none;
+    color: black;
+    height: 40px;
+    background-color: #F1F3F4;
+}
+
+.unmute, .stop {
+    color: #CC3B33;
+    font-size: 1.5rem;
+}
+
+
